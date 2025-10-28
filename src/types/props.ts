@@ -21,3 +21,9 @@ export interface FeaturedCarouselProps {
 export interface MovieInfoProps {
   movie: Movie;
 }
+
+export interface CarouselItemProps {
+  item: Movie;
+  onPress: (movie: Movie) => void;
+  screenWidth: number;
+}

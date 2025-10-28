@@ -1,16 +1,10 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, useWindowDimensions } from 'react-native';
-import { FeaturedCarouselProps } from '../types/props';
+import { CarouselItemProps, FeaturedCarouselProps } from '../types/props';
 import colors from '../constants/colors';
 import { Movie } from '../types/movie';
 
 const AUTO_SCROLL_INTERVAL = 5000;
-
-interface CarouselItemProps {
-  item: Movie;
-  onPress: (movie: Movie) => void;
-  screenWidth: number;
-}
 
 const CarouselItem = ({ item, onPress, screenWidth }: CarouselItemProps) => {
   const carouselWidth = screenWidth * (2 / 3);

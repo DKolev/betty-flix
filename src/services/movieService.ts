@@ -2,7 +2,7 @@ import { Movie, OMDBSearchResponse, OMDBMovie } from '../types/movie';
 import { API_ENDPOINTS } from '../constants/api';
 import { API_RESPONSE, ERROR_MESSAGES } from '../constants/strings';
 
-// helper function to normalize OMDB movie to our Movie type
+// helper function to normalize OMDB movie to Movie type
 const normalizeOMDBMovie = (omdbMovie: OMDBMovie): Movie => ({
   id: omdbMovie.imdbID,
   title: omdbMovie.Title,

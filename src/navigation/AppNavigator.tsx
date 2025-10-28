@@ -27,7 +27,7 @@ export default function AppNavigator() {
           component={HomeScreen}
           options={{
             title: 'BettyFlix',
-            headerShown: false, // Netflix-style fullscreen
+            headerShown: false,
           }}
         />
         <Stack.Screen 
